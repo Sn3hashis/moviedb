@@ -10,4 +10,6 @@ public interface ProductionCompanyService {
     public ProductionCompany addNewProductionCompany(ProductionCompany company);
 
     public ProductionCompany deleteProductionCompany(int id);
+
+    public List<ProductionCompany> findByName(String name);
 }

@@ -34,4 +34,10 @@ public class ProductionCompanyImpl implements ProductionCompanyService {
         return null;
     }
 
+    @Override
+    public List<ProductionCompany> findByName(String name) {
+
+        return companyDao.findByName(name);
+    }
+
 }

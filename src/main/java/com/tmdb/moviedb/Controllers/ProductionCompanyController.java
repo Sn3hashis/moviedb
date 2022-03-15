@@ -32,4 +32,9 @@ public class ProductionCompanyController {
     public ProductionCompany deleteProductionCompany(@PathVariable int id) {
         return service.deleteProductionCompany(id);
     }
+
+    @GetMapping("/companies/{name}")
+    public List<ProductionCompany> findByName(@PathVariable String name) {
+        return service.findByName(name);
+    }
 }
