@@ -21,6 +21,11 @@ public class MovieController {
     @Autowired
     private MovieService movieService;
 
+    @GetMapping("/")
+    public String welcomePage() {
+        return "Welcom User";
+    }
+
     @GetMapping("/movies")
     public ResponseEntity<List<Movie>> getAllMovies() {
         List<Movie> movieList = movieService.getAllMovies();
